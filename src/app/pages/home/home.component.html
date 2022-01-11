@@ -1,0 +1,34 @@
+<slider-component id="home"></slider-component>
+<section id="product">
+  <h1>{{'product.title' | translate}}</h1>
+  <form class="search" (submit)="onSubmitSearch($event)">
+    <input name="" type="text" placeholder="{{'product.search' | translate}}" name="search"  [(ngModel)]="search" />
+    <img src="assets/icons/zoom.png" alt="" (click)="onSubmitSearch($event)" >
+  </form>
+  <div class="container" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="50"
+    (scrolled)="getBooks()" [scrollWindow]="!nextEnable">
+    <product-component *ngFor="let item of books" [name]="item.title" [price]="0" [author]="item.authors">
+    </product-component>
+  </div>
+</section>
+<div class="background-gray" id="blog">
+  <section>
+    <h1>{{'posts.title' | translate}}</h1>
+    <post-component *ngFor="let item of postList" [item]="item"></post-component>
+  </section>
+</div>
+<section class="contact-us" id="contact">
+  <article>
+    <h2>{{'contact.title' | translate}}</h2>
+    <form class="contact-form" (submit)="onSubmitContact()" id="contact" [formGroup]="formContact">
+      <input formControlName="name" type="text" placeholder="{{'contact.name' | translate}}">
+      <input formControlName="email" type="email" placeholder="{{'contact.email' | translate}}">
+      <input formControlName="phone" type="tel" placeholder="{{'contact.phone' | translate}}">
+      <textarea formControlName="message" id="" cols="30" rows="3" placeholder="{{'contact.message' | translate}}"></textarea>
+      <button type="submit" form="contact">{{'contact.button' | translate}}</button>
+    </form>
+  </article>
+  <article>
+    <img src="assets/imgs/contact-img.jpg" alt="">
+  </article>
+</section>

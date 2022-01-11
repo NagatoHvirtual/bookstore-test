@@ -1,0 +1,58 @@
+:host {
+  box-shadow: 0 0 5px var(--whitegray);
+  border: 1px solid var(--whitegray);
+  padding: 3px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+}
+
+.image {
+  background-color: var(--whitegray);
+  article {
+    margin: 15px 50px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  img {
+    height: 35px;
+  }
+}
+
+.info {
+  margin-top: 10px;
+  .name-price {
+    font-weight: bold;
+    span {
+      vertical-align: top;
+      display: inline-block;
+      width: 110px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    span:last-child {
+      width: 50px;
+      text-align: right;
+      color: var(--greenlight);
+    }
+  }
+
+  .author {
+    font-weight: bold;
+    font-size: 11px;
+    color: gray;
+  }
+  .author-name {
+    span {
+      font-size: 9px;
+      background-color: gray;
+      color: white;
+      border-radius: 50%;
+      padding: 3px 2px 2px 2px;
+      margin-right: 5px;
+    }
+  }
+}

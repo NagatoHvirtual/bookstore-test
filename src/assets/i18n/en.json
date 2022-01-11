@@ -1,0 +1,59 @@
+{
+  "theme": {
+    "nav": {
+      "home": "Home",
+      "product": "Product",
+      "blog": "Blog",
+      "contact": "Contact Us"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Vitae aut explicabo fugit facere alias distinctio, exem commodi mollitia minusem dignissimos atque asperiores incidunt vel voluptate iste"
+    },
+    "address": {
+      "title": "Address",
+      "location": "Location",
+      "mail": "demo@gmail.com",
+      "call": "Call +01 1234567890"
+    }
+  },
+  "slider": {
+    "one": {
+      "title": "Bostorek Bookstore",
+      "info": "For All Your Reading Needs",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue est eu purus elementum ultricies.",
+      "readmore": "Read More"
+    }
+  },
+  "product": {
+    "title": "Products",
+    "search": "Search"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "message": "Message",
+    "button": "SEND"
+  },
+  "posts": {
+    "title": "From Our Blog",
+    "list": [{
+      "title": "Eius, dolor? Vel velit sed doloremque",
+      "description": "Incidunt magni explicabo ullam ipsa quo consequuntur eveniet illo? Aspernatur nam dolorem a neque? Esse eaque dolores hic debitis cupiditate, ad beatae voluptatem numquam dignissimos ab porro",
+      "readmore": "Read More",
+      "date": "19 January 2021"
+    }, {
+      "title": "Minus aliquid alias porro iure fuga",
+      "description": "Officiis veritatis id illo eligendi repellat facilis animi adipisci praesentium. Tempore ab provident porro illo ex obcaecati deleniti enim sequi voluptas at. Harum veniam eos nisi distinctio! Porro, reiclendis elus.",
+      "readmore": "Read More",
+      "date": "19 January 2021"
+    }]
+  },
+  "components": {
+    "product": {
+      "author": "Author"
+    }
+  }
+}

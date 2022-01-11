@@ -1,0 +1,19 @@
+<article class="image">
+  <article>
+    <img src="assets/imgs/cat1.png" alt="">
+  </article>
+</article>
+<article class="info">
+  <div class="name-price">
+    <span>{{name}}</span>
+    <span>{{price | currency }}</span>
+  </div>
+  <span class="author">
+    {{ 'components.product.author' | translate }}
+  </span>
+  <div class="author-name">
+    <span *ngFor="let item of author" >
+      {{ item.name | initialName }}
+    </span>
+  </div>
+</article>

@@ -1,0 +1,17 @@
+<section>
+  <div class="container">
+    <article class="slider-item" *ngFor="let item of sliderList" >
+      <div class="text-slider">
+        <span>{{item.title}}</span>
+        <h1>{{item.info}}</h1>
+        <p>{{item.description}}</p>
+        <button>{{item.readmore}}</button>
+      </div>
+      <img [src]="item.img" alt="">
+    </article>
+    <span class="button-action">
+      <i>&lt;</i>
+      <i>&gt;</i>
+    </span>
+  </div>
+</section>
